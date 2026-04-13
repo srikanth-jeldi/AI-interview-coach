@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.epitomehub</groupId>
+  <artifactId>ai-interview-coach</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>api-gateway</module>
+    <module>auth-service</module>
+    <module>user-profile-service</module>
+    <module>question-service</module>
+    <module>mock-interview-service</module>
+    <module>analytics-service</module>
+    <module>job-service</module>
+    <module>notification-service</module>
+  </modules>
+  <properties>
+    <java.version>21</java.version>
+    <spring.boot.version>3.3.5</spring.boot.version>
+    <spring.cloud.version>2023.0.3</spring.cloud.version>
+  </properties>
+</project>
