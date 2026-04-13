@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS notifications (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  user_id BIGINT NOT NULL,
+  type VARCHAR(50) NOT NULL,
+  title VARCHAR(160) NOT NULL,
+  message TEXT NOT NULL,
+  read_flag BOOLEAN NOT NULL DEFAULT FALSE,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  INDEX idx_notif_user_read (user_id, read_flag)
+);
